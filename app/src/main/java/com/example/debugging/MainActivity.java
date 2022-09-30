@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     public void init()
     {
         editTextName = findViewById(R.id.editTextName);
-        buttonBelepes = findViewById(R.id.buttonNext);
+        buttonBelepes = findViewById(R.id.buttonBelepes);
         SharedPreferences sharedPreferences = getSharedPreferences("Adatok", Context.MODE_PRIVATE);
         String seged = "";
         seged = sharedPreferences.getString("nev","Nincs elmentve a neved!");
