@@ -51,6 +51,6 @@ public class MainActivity extends AppCompatActivity {
         buttonBelepes = findViewById(R.id.buttonBelepes);
         SharedPreferences sharedPreferences = getSharedPreferences("Adatok", Context.MODE_PRIVATE);
         String seged = "";
-        seged = sharedPreferences.getString("nev","");
+        seged = sharedPreferences.getString("nev","Adatok");
     }
 }
